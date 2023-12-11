@@ -1,0 +1,66 @@
+import styled from 'styled-components'
+
+export const Container = styled.div`
+ width: 100%;
+ margin: 0 auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+
+ ul {
+  display: flex;
+  gap: .5rem;
+ }
+
+ li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  width: 3.6875rem;
+  height: 2.5rem;
+  img {
+   cursor: pointer;
+  }
+ }
+
+ a {
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  color: ${({ theme }) => theme.Text_Colors.text_secondary};
+  font-family: 'Heebo';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+ }
+`
+
+export const HeeaderStyle = styled.header`
+ width: 100vw;
+ height: 4.5rem;
+ padding: 1rem 5rem;
+ background-color: #171023;
+ box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.25);
+ `
+
+export const Logo = styled.div`
+ p {
+  width: 5.3125rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  color: ${({ theme }) => theme.Text_Colors.text_primary};
+  font-family: 'Kalam', cursive;
+  
+  span {
+   font-weight: 600;
+  }
+ }
+`
+
