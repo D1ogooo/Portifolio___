@@ -1,5 +1,5 @@
 import { Main, MainFirst, MainSecond, Links } from './style'
-import { Container, LeftContentFirst, RightContentFirst, InternalLeft, Seta1 } from './style'
+import { Container, LeftContentFirst, RightContentFirst, InternalLeft, Seta1, LeftFooter, Footer, Right } from './style'
 import { RightSecond, LeftSecond, FirstChild, SecondChild, Meuresumo } from './style'
 import GirlAndCat from '../assets/design girl bro.svg'
 import CurriculoImage from '../assets/ReadCvLogo.png'
@@ -11,6 +11,7 @@ import jsicon from '../assets/js icon.svg'
 import reacticon from '../assets/react icon.svg'
 import tailwindicon from '../assets/tailwind icon.svg'
 import nodeicon from '../assets/node icon.svg'
+import ArrowUp from '../assets/ArrowUp.png'
 import { MainThird } from '../components/CardProjects'
 import { MainFor } from '../components/CardContact'
 
@@ -76,6 +77,17 @@ function Home () {
      <MainThird />
      <MainFor/>
     </Main>
+    <Footer>
+     <Right>
+      <p>feito por Diogo maçal</p>
+     </Right>
+     <LeftFooter>
+      <a href="#">Github</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+      <img src={ArrowUp}/>
+     </LeftFooter>
+    </Footer>
    </Container>
   </>
  )

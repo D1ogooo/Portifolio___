@@ -224,3 +224,42 @@ h3 {
  line-height: 150%;
 }
 `
+
+export const Footer = styled.footer `
+ display: flex;
+ justify-content: space-between;
+ margin-top: 5.25rem;
+ margin-bottom: 2rem;
+
+
+`
+
+export const Right = styled.div`
+ p {
+  color: ${({ theme }) => theme.Text_Colors.text_secondary};
+  font-family: 'Heebo';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+ }
+`
+
+export const LeftFooter = styled.div`
+ display: flex;
+ gap: 2rem;
+
+ img {
+  cursor: pointer;
+ }
+
+ a {
+  text-decoration: none;
+  color: ${({ theme }) => theme.Text_Colors.text_secondary};
+  font-family: 'Heebo';
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+ }
+`
