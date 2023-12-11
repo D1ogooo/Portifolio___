@@ -34,10 +34,10 @@ export const Container = styled.div`
 
   color: ${({ theme }) => theme.Text_Colors.text_secondary};
   font-family: 'Heebo';
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 150%;
  }
 `
 
@@ -58,9 +58,9 @@ export const Logo = styled.div`
   color: ${({ theme }) => theme.Text_Colors.text_primary};
   font-family: 'Kalam', cursive;
   
-  span {
-   font-weight: 600;
-  }
+ span {
+  font-weight: 600;
  }
+}
 `
 

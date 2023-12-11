@@ -4,11 +4,12 @@ export const GlobalStyle = createGlobalStyle`
  * {
   margin: 0;
   padding: 0;
-  outline: none;
+  outline: 0;
   box-sizing: border-box;
  }
 
  body {
   background: ${({ theme }) => theme.Surface_Colors.surface_background};
  }
+
 `
