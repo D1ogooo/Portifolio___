@@ -74,6 +74,10 @@ export const CardPai = styled.div`
  display: flex;
  justify-content: center;
  gap: 1rem;
+
+:hover {
+  
+ }
 `
 
 export const Card = styled.div`
@@ -103,4 +107,10 @@ export const ButtonCard = styled.button`
  align-items: center;
  gap: 0.5rem;
  border: none;
+`
+
+export const CardsAparecer = styled.div`
+ a {
+
+ }
 `

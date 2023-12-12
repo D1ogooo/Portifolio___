@@ -238,10 +238,10 @@ export const Right = styled.div`
  p {
   color: ${({ theme }) => theme.Text_Colors.text_secondary};
   font-family: 'Heebo';
-  font-size: 14px;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 171.429%;
  }
 `
 
