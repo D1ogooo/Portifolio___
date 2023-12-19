@@ -1,6 +1,10 @@
 import { Main, MainFirst, MainSecond, Links } from './style'
-import { Container, LeftContentFirst, RightContentFirst, InternalLeft, Seta1, LeftFooter, Footer, Right } from './style'
+import { Container, LeftContentFirst, RightContentFirst, InternalLeft, Seta1 } from './style'
 import { RightSecond, LeftSecond, FirstChild, SecondChild, Meuresumo } from './style'
+import { Footer } from '../components/Footer'
+import { MainThird } from '../components/CardProjects'
+import { MainFor } from '../components/CardContact'
+import { MeuResumo } from '../components/Meu resumo'
 import GirlAndCat from '../assets/design girl bro.svg'
 import CurriculoImage from '../assets/ReadCvLogo.png'
 import setaDireitaImage from '../assets/ArrowRight.svg'
@@ -11,9 +15,6 @@ import jsicon from '../assets/js icon.svg'
 import reacticon from '../assets/react icon.svg'
 import tailwindicon from '../assets/tailwind icon.svg'
 import nodeicon from '../assets/node icon.svg'
-import ArrowUp from '../assets/ArrowUp.png'
-import { MainThird } from '../components/CardProjects'
-import { MainFor } from '../components/CardContact'
 
 function Home () {
  return (
@@ -23,7 +24,7 @@ function Home () {
      <MainFirst>
      <LeftContentFirst>
      <InternalLeft>
-     <h1>Olá, eu sou o Diogo</h1>
+      <h1>Olá, eu sou o Diogo</h1>
       <h2>Desenvolvedor Fullstack</h2>
       <p>Com 2 anos de experiência em Desenvolvimento web. Sou especialista em desenvolvimento
         de websites responsivos com React e Node.
@@ -42,7 +43,7 @@ function Home () {
        </Seta1>
       </Links>
      </InternalLeft>
-     </LeftContentFirst> 
+     </LeftContentFirst>
      <RightContentFirst>
       <img src={imagemPrincipal}/>
      </RightContentFirst>
@@ -68,26 +69,13 @@ function Home () {
           I am currently seeking opportunities to bring my skills and enthusiasm to a 
           tech company in the United States or Europe and am excited about the prospect of relocating to pursue new challenges.</h3>
        </SecondChild>
-       <Meuresumo>
-        <img src={CurriculoImage}/>
-        Meu resumo
-       </Meuresumo>
+      <MeuResumo/>
       </LeftSecond>
      </MainSecond>
      <MainThird />
      <MainFor/>
     </Main>
-    <Footer>
-     <Right>
-      <p>feito por Diogo maçal</p>
-     </Right>
-     <LeftFooter>
-      <a href="#">Github</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Instagram</a>
-      <img src={ArrowUp}/>
-     </LeftFooter>
-    </Footer>
+    <Footer />
    </Container>
   </>
  )

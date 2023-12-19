@@ -7,11 +7,11 @@ export const Container = styled.div`
 `
 
 export const Main = styled.main`
-
 `
 
 export const MainFirst = styled.div`
- margin-top: 9.375rem;
+ margin-top: 6.375rem;
+ margin-bottom: .5rem;
  display: flex;
  justify-content: space-around;
 
@@ -33,6 +33,9 @@ export const Seta1 = styled.div`
 margin: 0 auto;
 display: flex;
 align-items: center;
+ img {
+  margin-top: 2rem;
+ }
 `
 
 export const LeftContentFirst = styled.section`
@@ -223,43 +226,4 @@ h3 {
  font-weight: 400;
  line-height: 150%;
 }
-`
-
-export const Footer = styled.footer `
- display: flex;
- justify-content: space-between;
- margin-top: 5.25rem;
- margin-bottom: 2rem;
-
-
-`
-
-export const Right = styled.div`
- p {
-  color: ${({ theme }) => theme.Text_Colors.text_secondary};
-  font-family: 'Heebo';
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 171.429%;
- }
-`
-
-export const LeftFooter = styled.div`
- display: flex;
- gap: 2rem;
-
- img {
-  cursor: pointer;
- }
-
- a {
-  text-decoration: none;
-  color: ${({ theme }) => theme.Text_Colors.text_secondary};
-  font-family: 'Heebo';
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5rem; /* 150% */
- }
 `

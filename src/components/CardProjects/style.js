@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const TitleProjects = styled.h1`
 display: flex;
@@ -6,7 +7,7 @@ align-items: center;
 gap: .2rem;
 flex-direction: column;
 
- h1 {
+ h2 {
  text-align: center;
  color: #7DFFAF;
  font-family: 'Kalam';
@@ -69,18 +70,27 @@ export const HeaderCard = styled.div`
 `
 
 export const CardPai = styled.div`
+ max-width: 90vw;
+ overflow-x: auto;
+ overflow: hidden;
+ scroll-behavior: smooth;
  margin-top: 1.2rem;
  margin-bottom: 1.2rem;
  display: flex;
  justify-content: center;
+ align-items: center;
  gap: 1rem;
-
-:hover {
-  
- }
 `
 
-export const Card = styled.div`
+export const Card = styled(Link)`
+ &:hover {
+  transition: 500ms all;
+  border: 0.0938rem solid #7dffaf;
+  background: ${({ theme }) => theme.Surface_Colors.surface_primary};
+  box-shadow: 0rem 0rem 3rem 0rem rgba(125, 255, 175, 0.24);
+ }
+
+ text-decoration: none;
  display: flex;
  padding: 1.5rem;
  flex-direction: column;
@@ -95,7 +105,7 @@ export const Card = styled.div`
 export const ButtonCard = styled.button`
  display: flex;
  align-items: center;
- margin: 0 auto;
+
  border-radius: .5rem;
  cursor: pointer;
  color: ${({ theme }) => theme.Text_Colors.text_primary};
@@ -107,6 +117,33 @@ export const ButtonCard = styled.button`
  align-items: center;
  gap: 0.5rem;
  border: none;
+
+ img {
+  transform: scaleX(-1);
+ }
+`
+
+export const ButtonCardTwo = styled.button`
+ display: flex;
+ align-items: center;
+
+ border-radius: .5rem;
+ cursor: pointer;
+ color: ${({ theme }) => theme.Text_Colors.text_primary};
+ background-color: ${({ theme }) => theme.Surface_Colors.surface_secondary};
+ font-family: 'Heebo';
+ min-width: 7rem;
+ padding: 1rem 1.5rem;
+ justify-content: center;
+ align-items: center;
+ gap: 0.5rem;
+ border: none;
+`
+
+export const PaiButtonCard = styled.div`
+ display: flex;
+ justify-content: center;
+ gap: 2rem;
 `
 
 export const CardsAparecer = styled.div`

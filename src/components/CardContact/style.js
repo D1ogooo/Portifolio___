@@ -15,7 +15,6 @@ export const Left = styled.div`
  display: flex;
  flex-direction: column;
 
-
  img {
   width: 10rem;
   height: 10rem;
@@ -37,7 +36,6 @@ export const Left = styled.div`
  font-style: normal;
  font-weight: 500;
  line-height: 2rem;
- 
  }
 
  p {
