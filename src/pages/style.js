@@ -137,7 +137,7 @@ export const RightContentFirst = styled.section`
 export const Links = styled.div`
  display: flex;
  align-items: flex-start;
- gap: 1rem;
+ gap: 1rem;s
 `
 
 export const MainSecond = styled.div`

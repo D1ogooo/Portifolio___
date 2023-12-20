@@ -1,20 +1,27 @@
+import { useState } from 'react'
 import { Left , Right , Container, ComentContainer, ButtonMessage, Internal, FirstLeft } from './style'
 import SetaDireita from '../../assets/ArrowRight.svg'
-import Bg from '../../assets/Bg.png'
+import ImageDiogo from '../../assets/imagem diogo.png'
 import githubimage from '../../assets/logo_github 1.svg'
 import linkedinimage from '../../assets/logo_instagram 1.svg'
 import instagramimage from '../../assets/logo_linkedin 1.svg'
 
 export const MainFor = () => {
+  const [mensagem, setMensagem] = useState()
+  
+  function handleInputChange (e) {
+   setMensagem(e.target.value)
+  }
+  
   return (
    <>
     <Container>
      <Left>
      <FirstLeft>
-     <img src={Bg}/>
-      <h1>Contact</h1>
-      <h2>Enjoyed my work? Let's work together</h2>
-      <p>I’m always up for a chat. Pop me an email at hi@linalevi.com or give me a shout on social media. </p>
+     <img src={ImageDiogo}/>
+      <h1>Contato</h1>
+      <h2>Gostou do meu trabalho? Vamos trabalhar juntos</h2>
+      <p>Estou sempre pronto para conversar. Envie-me um e-mail para diiogomarsalcosta@gmail.com ou ligue para mim nas redes sociais. </p>
      </FirstLeft>
       <Internal>
        <a href="https://github.com/D1ogooo" target='_blank'>
@@ -29,12 +36,10 @@ export const MainFor = () => {
       </Internal>
      </Left>
      <Right>
-      <input type="text" placeholder='Name'/>
-      <input type="text" placeholder='E-mail'/>
-      <ComentContainer placeholder="Sua mensagem"/>
-      <ButtonMessage>
+      <ComentContainer placeholder="Sua mensagem" value={mensagem} onChange={handleInputChange}/>
+      <ButtonMessage target="_blank" href={`https://wa.me/988004330/?${mensagem}`}>
        Enviar mensagem
-       <img src={SetaDireita}/>
+      <img src={SetaDireita}/>
       </ButtonMessage>
      </Right>
     </Container>

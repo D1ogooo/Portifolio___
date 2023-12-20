@@ -9,10 +9,7 @@ export function Router() {
    <Routes>
     <Route path='/' element={<DefaultLayout/>}>
      <Route path='/' element={<Home/>}/>
-     {/* <Route path='/projects/1' element={</>}/>
-     <Route path='/projects/3' element={</>}/>
-     <Route path='/projects/4' element={</>}/>
-     <Route path='/projects/5' element={</>}/> */}
+     <Route path='/projects' element={<Detail/>}/>
     </Route>
    </Routes>
   </>

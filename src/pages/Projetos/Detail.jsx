@@ -1,6 +1,8 @@
+import { useLocation } from 'react-router-dom'
 import { Container, PaiCards, Left, Right } from './style'
 import { FirstButton, SecondButton, Return, SecondLeft, First, FirstLeft, FirstFirst } from './style'
 import { Footer } from '../../components/Footer'
+import { DataProjects } from './data'
 import setaLeft from '../../assets/ArrowRight.svg'
 import setaLeftUp from '../../assets/ArrowUpRight.svg'
 import GlobeSimple from '../../../src/pages/Projetos/img/GlobeSimple.svg'
@@ -11,32 +13,32 @@ import PythonIcon from '../../assets/python icon.svg'
 import TailwindIcon from '../../assets/tailwind icon.svg'
 
 export const Detail = () => {
+  const location = useLocation();
+  const stateValue = location.search;
+ 
   return (
     <>
      <Container>
-      <PaiCards>
+      {DataProjects.map((info) => (
+      <PaiCards key={stateValue}>
        <Left>
         <FirstLeft>
          <Return to="/">
           <img src={ReturnImage}/>
          </Return>
-        <img src={ExemploImage}/>
+        <img src={info.img}/>
         </FirstLeft>
         <SecondLeft>
          <FirstFirst>
-          <p>Jul - Dec 2022</p> 
-          <First>
-           <img src={PythonIcon}/>
-           <img src={TailwindIcon}/>
+          <p>Jan - Dec 2023</p> 
+         <First>
+          <img src={info.tech.image}/>
          </First>
          </FirstFirst>
-         <h2>Feedback Widget</h2>
+         <h2>{info.title}</h2>
          <h3><span>My role:</span> Desenvolvedor fullstack</h3>
          <h3><span>Team:</span> Marcus Souza (PM), Ilana Mallak (UX/UI Designer)</h3>
-         <p>We improved our CSAT from 4.4 to 4.8 after analysing custumer feedback provided on our product trought this widget. 
-          I worked as the main developer of this features implementing the front-end using Tailwind and a Data Viz dashboard
-          using Python to follow-up customer feedback and improve data analysis. 
-          The main challenge was to create a flexible structure that could be used as an API across all our company web applications.
+         <p>{info.text}
          </p>
         </SecondLeft>
        </Left>
@@ -54,6 +56,7 @@ export const Detail = () => {
         </SecondButton>
        </Right>
       </PaiCards>
+       ))}
      </Container>
     </>
   )

@@ -59,6 +59,7 @@ export const Left = styled.div`
 `
 
 export const Right = styled.div`
+ width: 500px;
  display: flex;
  flex-direction: column;
  gap: 0.75rem;
@@ -95,6 +96,12 @@ export const FirstLeft = styled.div`
   max-width: 592px;
   min-width: 200px;
  }
+
+ img {
+  border-radius: 100px;
+  width: 180px;
+  height: 180px;
+ }
 `
 
 export const Internal = styled.div`
@@ -129,13 +136,15 @@ export const ComentContainer = styled.textarea`
  overflow: hidden;
  color: ${({ theme }) => theme.Text_Colors.text_secondary};
  font-family: 'Heebo';
+ font-size: 15px;
  background-color: ${({ theme }) => theme.Surface_Colors.surface_background};
  border-radius: .5rem;
 `
 
-export const ButtonMessage = styled.button`
+export const ButtonMessage = styled.a`
  color: #F5F6F6;
  text-align: center;
+ text-decoration: none;
  font-family: 'Heebo';
  font-size: 1rem;
  font-style: normal;

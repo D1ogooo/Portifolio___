@@ -30,13 +30,13 @@ function Home () {
         de websites responsivos com React e Node.
       </p>
       <Links>
-       <a href="#" id="first_button">
-        <img src={CurriculoImage}/>
+       <a href='#mainSecond' id="first_button">
+       <img src={CurriculoImage}/>
         Meu resumo
        </a>
        <a href="#" id="second_button">
         Entrar em contato
-        <img src={setaDireitaImage}/>
+       <img src={setaDireitaImage}/>
        </a>
        <Seta1>
         <img src={SetaParaBaixo} id="imagem_setaprabaixo"/>
@@ -49,7 +49,7 @@ function Home () {
      </RightContentFirst>
      </MainFirst>
  
-     <MainSecond>
+     <MainSecond id='mainSecond'>
       <RightSecond>
        <img src={GirlAndCat}/>
       </RightSecond>

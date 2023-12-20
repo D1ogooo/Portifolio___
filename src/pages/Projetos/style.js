@@ -98,6 +98,7 @@ export const SecondButton = styled.a`
 `
 
 export const SecondLeft = styled.div`
+ margin-top: -1.27rem;
  border-radius: 0px 0px .5rem .5rem;
  align-self: stretch;
  background-color: ${({ theme }) => theme.Surface_Colors.surface_primary};

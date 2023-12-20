@@ -13,7 +13,13 @@ export const MeuResumo = () => {
       <AlertDialog.Content className="AlertDialogContent">
         <AlertDialog.Title className="AlertDialogTitle">Sobre mim</AlertDialog.Title>
         <AlertDialog.Description className="AlertDialogDescription">
-         texto...
+        Olá, meu nome é Diogo e sou Desenvolvedor Fullstack. Desde menor de idade, sempre fui apaixonado por criar coisas,
+         mas não sabia nada sobre esse mundo da programação. Porém, em 2018 descobri a existência dele através de um amigo,
+          Comecei meus estudos na programação no ano de 2022, e fui estudando o frontend deis de a base até o framework, venho
+          me empenhando bastante na área principalmente com o framework React, venho focando no desenvolvimento de projetos fullstack e evoluir
+          no desenvolvimento backend com Node, tenho 2 anos de experiência na área de desenvolvimento web e nesse tempo vim me empenhando bastante
+          para poder cumprir com as exigências do mercado além de ser totalmente apaixonado pela programação, fique a vontade para ver meus projetos
+          e conhecer meu trabalho
         </AlertDialog.Description>
         <div style={{ display: 'flex', gap: 25, justifyContent: 'flex-end' }}>
          <AlertDialog.Action asChild>

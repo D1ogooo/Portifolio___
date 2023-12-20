@@ -18,6 +18,7 @@ flex-direction: column;
  }
 
  p {
+  margin-bottom: .8rem;
   align-self: stretch;
   color: #F5F6F6;
   text-align: center;
@@ -70,16 +71,13 @@ export const HeaderCard = styled.div`
 `
 
 export const CardPai = styled.div`
- max-width: 90vw;
+ width: 72%;
  overflow-x: auto;
  overflow: hidden;
  scroll-behavior: smooth;
- margin-top: 1.2rem;
- margin-bottom: 1.2rem;
+ margin: 0 auto;
  display: flex;
- justify-content: center;
- align-items: center;
- gap: 1rem;
+ gap: 2rem;
 `
 
 export const Card = styled(Link)`
@@ -100,12 +98,19 @@ export const Card = styled(Link)`
  border-radius: 1rem;
  background-color: #2C243B;
  height: 21.5rem;
+
+ #first_image{
+  width: 100%;
+  height: 31.25rem;
+  border-radius: 0.3125rem;
+ }
 `
 
 export const ButtonCard = styled.button`
  display: flex;
  align-items: center;
-
+ 
+ margin-top: 1.2rem;
  border-radius: .5rem;
  cursor: pointer;
  color: ${({ theme }) => theme.Text_Colors.text_primary};
@@ -127,6 +132,7 @@ export const ButtonCardTwo = styled.button`
  display: flex;
  align-items: center;
 
+ margin-top: 1.2rem;
  border-radius: .5rem;
  cursor: pointer;
  color: ${({ theme }) => theme.Text_Colors.text_primary};
@@ -147,7 +153,5 @@ export const PaiButtonCard = styled.div`
 `
 
 export const CardsAparecer = styled.div`
- a {
 
- }
 `
