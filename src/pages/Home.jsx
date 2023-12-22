@@ -12,7 +12,7 @@ import imagemPrincipal from '../assets/imagem principal da mao com pc.svg'
 import SetaParaBaixo from '../assets/Graphic.svg'
 import pythonicon from '../assets/python icon.svg'
 import jsicon from '../assets/js icon.svg'
-import reacticon from '../assets/react icon.svg'
+import reacticon from '../pages/Projetos/img/react icon.svg'
 import tailwindicon from '../assets/tailwind icon.svg'
 import nodeicon from '../assets/node icon.svg'
 
@@ -21,20 +21,20 @@ function Home () {
   <>
    <Container>
     <Main>
-     <MainFirst>
+    <MainFirst>
      <LeftContentFirst>
      <InternalLeft>
       <h1>Olá, eu sou o Diogo</h1>
       <h2>Desenvolvedor Fullstack</h2>
       <p>Com 2 anos de experiência em Desenvolvimento web. Sou especialista em desenvolvimento
-        de websites responsivos com React e Node.
+      de websites responsivos com React e Node.
       </p>
       <Links>
        <a href='#mainSecond' id="first_button">
        <img src={CurriculoImage}/>
         Meu resumo
        </a>
-       <a href="#" id="second_button">
+       <a href="#footer" id="second_button">
         Entrar em contato
        <img src={setaDireitaImage}/>
        </a>
@@ -47,9 +47,8 @@ function Home () {
      <RightContentFirst>
       <img src={imagemPrincipal}/>
      </RightContentFirst>
-     </MainFirst>
- 
-     <MainSecond id='mainSecond'>
+    </MainFirst>
+     <MainSecond>
       <RightSecond>
        <img src={GirlAndCat}/>
       </RightSecond>
@@ -62,14 +61,14 @@ function Home () {
         <img src={pythonicon} />
        </FirstChild>
        <SecondChild>
-        <p>Sobre mim</p>
-        <h2>I’m a passionate software developer looking for my first international oppotunity</h2>
-        <h3>Beyond coding, I'm a coffee enthusiast, a cat lover, 
-          and a self-taught artist who enjoys spending my free time doodling. 
-          I am currently seeking opportunities to bring my skills and enthusiasm to a 
-          tech company in the United States or Europe and am excited about the prospect of relocating to pursue new challenges.</h3>
+       <p>Sobre mim</p>
+       <h2>Sou um Desenvolvedor apaixonado pela programação e estou em busca da minha primeira vaga</h2>
+       <h3>Deis de criança sempre fui gostei de criar coisas, sou apaixonado por T.I e muito voltado para programação web,
+        amo bastante a música e amo muito tocar bateria e tenho uma paixão por teclado, nos tempos vagos eu crio projetos e estudo para poder evoluir na área,
+        sou uma pessoa bastante observadora então acaba que até com coisas do dia dia acabo tendo ideias de projetos então pode-se dizer que sou bastante criativo
+       </h3>
        </SecondChild>
-      <MeuResumo/>
+       <MeuResumo/>
       </LeftSecond>
      </MainSecond>
      <MainThird />

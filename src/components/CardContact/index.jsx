@@ -3,8 +3,8 @@ import { Left , Right , Container, ComentContainer, ButtonMessage, Internal, Fir
 import SetaDireita from '../../assets/ArrowRight.svg'
 import ImageDiogo from '../../assets/imagem diogo.png'
 import githubimage from '../../assets/logo_github 1.svg'
-import linkedinimage from '../../assets/logo_instagram 1.svg'
-import instagramimage from '../../assets/logo_linkedin 1.svg'
+import instagramimage from '../../assets/logo_instagram 1.svg'
+import linkedinimage from '../../assets/logo_linkedin 1.svg'
 
 export const MainFor = () => {
   const [mensagem, setMensagem] = useState()
@@ -12,6 +12,8 @@ export const MainFor = () => {
   function handleInputChange (e) {
    setMensagem(e.target.value)
   }
+
+  const messageWhatsap = mensagem ? mensagem.split(' ').join('%20') : ''
   
   return (
    <>
@@ -27,17 +29,17 @@ export const MainFor = () => {
        <a href="https://github.com/D1ogooo" target='_blank'>
         <img src={githubimage}/>
        </a>
-       <a href="https://www.linkedin.com/in/diogo-maçal-4a31882a1" target='_blank'>
+       <a href="https://www.instagram.com/diogoo_0202/" target='_blank'>
         <img src={instagramimage}/>
        </a>
-       <a href="#" target='_blank'>
+       <a href="https://www.linkedin.com/in/diogo-ma%C3%A7al-70a18a2a6/" target='_blank'>
         <img src={linkedinimage}/>
        </a>
       </Internal>
      </Left>
      <Right>
-      <ComentContainer placeholder="Sua mensagem" value={mensagem} onChange={handleInputChange}/>
-      <ButtonMessage target="_blank" href={`https://wa.me/988004330/?${mensagem}`}>
+     <ComentContainer placeholder="Sua mensagem" value={mensagem} onChange={handleInputChange}/>
+      <ButtonMessage target="_blank" href={`https://wa.me/988004330/?text=${messageWhatsap}`}>
        Enviar mensagem
       <img src={SetaDireita}/>
       </ButtonMessage>

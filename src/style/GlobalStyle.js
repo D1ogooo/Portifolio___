@@ -16,5 +16,4 @@ export const GlobalStyle = createGlobalStyle`
  body {
   background: ${({ theme }) => theme.Surface_Colors.surface_background};
  }
-
 `

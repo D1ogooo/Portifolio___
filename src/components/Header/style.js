@@ -41,13 +41,41 @@ export const Container = styled.div`
  }
 `
 
+export const FirstHeader = styled.div`
+ @media (max-width: 62.5rem) { // Tablet
+  display: none;
+ }
+`
+
+export const ImageHeaderSecond = styled.div`
+ display: flex;
+ align-items: center;
+ display: none;
+ 
+ @media (max-width: 62.5rem) { // Tablet
+  display: block;
+ }
+ 
+ #icon_hamb {
+  cursor: pointer;
+  width: 1.875rem;
+  height: 1.875rem;
+  flex-shrink: 0;
+}
+`
+
+export const SecondHeader = styled.div`
+ display: none;
+`
+
+
 export const HeeaderStyle = styled.header`
- width: 100vw;
+ width: 100%;
  height: 4.5rem;
  padding: 1rem 5rem;
  background-color: #171023;
  box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.25);
- `
+`
 
 export const Logo = styled.div`
  p {

@@ -3,8 +3,10 @@ import styled from 'styled-components'
 export const FooterStyle = styled.footer`
  display: flex;
  justify-content: space-between;
- margin-top: 5rem;
- margin-bottom: 2rem;
+ width: 95%;
+ margin: 0 auto;
+ padding-bottom: 2rem;
+ padding-top: 2rem;
 `
 
 export const Right = styled.div`

@@ -1,47 +1,67 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
- width: 90%;
+
  margin: 0 auto;
   
 `
 
 export const Main = styled.main`
+ 
 `
 
 export const MainFirst = styled.div`
  margin-top: 6.375rem;
  margin-bottom: .5rem;
- display: flex;
  justify-content: space-around;
+ display: flex;
 
- @media (max-width: 62.5rem) {
+ @media (max-width: 62.5rem) { // Tablet
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
  }
 `
 
 export const InternalLeft = styled.div`
  display: flex;
- width: 37rem;
+ max-width: 37rem;
+ min-width: 2rem;
  flex-direction: column;
  align-items: flex-start;
  gap: 2rem;
+
+ @media (max-width: 62.5rem) { // Tablet
+  align-items: center;
+  h2 {
+   display: flex;
+   align-items: center ;
+   justify-content: center;
+  }
+  p {
+   text-align: center;
+  }
+ }
 `
 
 export const Seta1 = styled.div`
-margin: 0 auto;
-display: flex;
-align-items: center;
+ margin: 0 auto;
+ display: flex;
+ align-items: center;
+
  img {
   margin-top: 2rem;
+ }
+
+ @media (max-width: 62.5rem) { // Tablet
+  display: none;
  }
 `
 
 export const LeftContentFirst = styled.section`
   display: flex;
-  flex-direction: column; /* Altere conforme necessário */
-  padding: 6rem 2rem; /* Ajuste o preenchimento conforme necessário */
+  flex-direction: column;
+  padding: 6rem 2rem;
   align-items: center;
   gap: 2rem;
  
@@ -54,7 +74,7 @@ export const LeftContentFirst = styled.section`
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 3.5rem; /* 140% */
+  line-height: 140%;
  }
  
  h2 {
@@ -79,15 +99,14 @@ export const LeftContentFirst = styled.section`
 
  #first_button {
   display: flex;
-  flex: 1 0 0;
-  border-radius: 0.5rem;
-  background: ${({ theme }) => theme.Surface_Colors.surface_secondary};
   text-decoration: none;
+  background: ${({ theme }) => theme.Surface_Colors.surface_secondary};
   min-width: 7rem;
   padding: 1rem 1.5rem;
   justify-content: center;
   align-items: center;
   gap: .5rem;
+  border-radius: .5rem;
 
   color: ${({ theme }) => theme.Text_Colors.text_primary};
   text-align: center;
@@ -123,31 +142,36 @@ export const RightContentFirst = styled.section`
  align-items: center;
  display: flex;
  width: 30rem;
-
   img {
    width: 100%;
    height: auto;
   }
-  
-  @media (max-width: 62.5rem) {
-   
-  }
+
+ @media (max-width: 62.5rem) {
+  order: -1;
+ }
 `
 
 export const Links = styled.div`
  display: flex;
  align-items: flex-start;
- gap: 1rem;s
+ gap: 1rem;
 `
 
 export const MainSecond = styled.div`
+ @media (max-width: 75rem) {
+  flex-wrap: wrap;
+  margin-bottom: 300px;
+  height: 59.9rem;
+ }
+ 
+ background-color: #2C243B;
  display: flex;
  align-items: center;
  justify-content: space-around;
  border-radius: 1rem; 
  height: 31.25rem;
  margin-bottom: 3.125rem;
- background-color: #2C243B;
 `
 
 export const RightSecond = styled.div`
@@ -155,7 +179,7 @@ export const RightSecond = styled.div`
   width: 29.6627rem;
   height: 20.916rem;
   flex-shrink: 0;
- }
+ } 
 `
 
 export const LeftSecond = styled.div`
@@ -163,8 +187,8 @@ export const LeftSecond = styled.div`
  justify-content: space-between;
  flex-direction: column;
  gap: 2rem;
- width: 592px;
- height: 344px;
+ width: 37rem;
+ height: 21.5rem;
 `
 
 export const Meuresumo = styled.button`
@@ -198,7 +222,7 @@ export const SecondChild = styled.div`
  display: flex;
  flex-direction: column;
  align-items: flex-start;
- gap: 2rem;
+ gap: .4rem;
  
  p {
  color: #7DFFAF;
@@ -225,5 +249,5 @@ h3 {
  font-style: normal;
  font-weight: 400;
  line-height: 150%;
-}
+} */
 `

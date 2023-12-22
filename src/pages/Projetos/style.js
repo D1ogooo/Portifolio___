@@ -71,6 +71,11 @@ export const FirstFirst = styled.div`
   height: 30px;
  }
 
+ svg {
+  width: 30px;
+  height: 30px;
+ }
+
  p {
   width: 100%;
  }
@@ -128,22 +133,23 @@ h3 {
  font-weight: 400;
  line-height: 180%;
 }
- span {
-  color: ${({ theme }) => theme.Text_Colors.text_secondary};
-  font-family: 'Heebo';
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 180%;
+
+span {
+ color: ${({ theme }) => theme.Text_Colors.text_secondary};
+ font-family: 'Heebo';
+ font-size: 1.125rem;
+ font-style: normal;
+ font-weight: 700;
+ line-height: 180%;
 }
 
 p {
-  color: ${({ theme }) => theme.Text_Colors.text_secondary};
-  font-family: 'Heebo';
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2rem;
+ color: ${({ theme }) => theme.Text_Colors.text_secondary};
+ font-family: 'Heebo';
+ font-size: 1.125rem;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 2rem;
 }
 `
 

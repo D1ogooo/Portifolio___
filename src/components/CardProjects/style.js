@@ -30,7 +30,14 @@ flex-direction: column;
  }
 `
 
+export const SubContainer = styled.div`
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+`
+
 export const FooterCard = styled.div`
+  width: 360px;
   display: flex;
   flex-direction: column;
   gap: .5rem;
@@ -46,7 +53,7 @@ export const FooterCard = styled.div`
    line-height: 150%;
   }
   
-  h1 {
+  h3 {
    color: #F5F6F6;
    font-family: 'Heebo';
    font-size: 1.25rem;
@@ -68,15 +75,27 @@ export const HeaderCard = styled.div`
   font-weight: 400;
   line-height: 171.429%;
  }
+
+ div {
+  display: flex;
+  gap: .5rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  img {
+   width: 2rem;
+   height: 2rem;
+  }
+ }
 `
 
 export const CardPai = styled.div`
- width: 72%;
+ display: flex;
+ width: 80%;
  overflow-x: auto;
  overflow: hidden;
  scroll-behavior: smooth;
- margin: 0 auto;
- display: flex;
+ flex-shrink: 0;
  gap: 2rem;
 `
 
@@ -90,20 +109,14 @@ export const Card = styled(Link)`
 
  text-decoration: none;
  display: flex;
- padding: 1.5rem;
+ padding: 1.9rem;
  flex-direction: column;
+ width: 384px;
+ height: 344px;
  align-items: flex-start;
- gap: .5rem;
  align-self: stretch;
  border-radius: 1rem;
  background-color: #2C243B;
- height: 21.5rem;
-
- #first_image{
-  width: 100%;
-  height: 31.25rem;
-  border-radius: 0.3125rem;
- }
 `
 
 export const ButtonCard = styled.button`
@@ -152,6 +165,16 @@ export const PaiButtonCard = styled.div`
  gap: 2rem;
 `
 
-export const CardsAparecer = styled.div`
+export const CardImage = styled.section`
+ margin: 0 auto;
 
+ #first_image{
+  width: 100%;
+  height: 176px;
+  border-radius: 0.3125rem;
+ }
+`
+
+export const CardsAparecer = styled.div`
+ 
 `
