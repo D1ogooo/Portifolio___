@@ -19,7 +19,7 @@ import nodeicon from '../assets/node icon.svg'
 function Home () {
  return (
   <>
-   <Container>
+   <Container id='home'>
     <Main>
     <MainFirst>
      <LeftContentFirst>
@@ -53,7 +53,7 @@ function Home () {
      </RightContentFirst>
     </MainFirst>
 
-    <SecondContainer>
+    <SecondContainer id='about'>
      <MainSecond>
       <RightSecond>
        <img src={GirlAndCat}/>

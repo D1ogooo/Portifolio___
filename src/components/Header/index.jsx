@@ -20,21 +20,21 @@ export const Header = () => {
      <FirstHeader>
        <ul>
         <li>
-         <a href="#">Home</a>
+         <a href="#home">Home</a>
         </li>
         <li>
-         <a href="#">About</a>
+         <a href="#about">About</a>
         </li>
         <li>
-         <a href="#">Projects</a>
+         <a href="#projects">Projects</a>
         </li>
         <li>
-         <a href="#">Contact</a>
+         <a href="#contato">Contact</a>
         </li>
-        <li>
+        {/*<li>
          <a href="#">PT</a>
         </li>
-        {/* <li>
+         <li>
          <img src={sumIcon}/>
         </li> */}
        </ul>

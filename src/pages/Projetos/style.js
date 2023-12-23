@@ -90,6 +90,7 @@ export const FirstFirst = styled.div`
 
 export const SecondButton = styled.a`
  cursor: pointer;
+ text-decoration: none;
  border: none;
  border-radius: 0.5rem;
  background-color: ${({ theme }) => theme.Surface_Colors.surface_background};

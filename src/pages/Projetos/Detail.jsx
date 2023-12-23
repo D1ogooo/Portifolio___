@@ -40,12 +40,12 @@ export const Detail = () => {
      </Left>
      <Right>
       <h2>Dê uma olhada nesse projeto</h2>
-      <FirstButton target='_blank'>
+      {/* <FirstButton target='_blank'>
        <img src={GlobeSimple}/>
         Demonstração
        <img src={setaLeftUp}/>
-      </FirstButton>
-      <SecondButton target='_blank'>
+      </FirstButton> */}
+      <SecondButton href={project.link_github} target='_blank'>
       <img src={GithubLogo}/>
        Código
       <img src={setaLeftUp}/>

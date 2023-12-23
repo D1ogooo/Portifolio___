@@ -28,7 +28,7 @@ export const MainThird = () => {
 
   return (
   <>
-   <TitleProjects>
+   <TitleProjects id='projects'>
     <h2>Projetos</h2>
     <p>Dê uma olhada nos meus projetos em destaque</p>
    </TitleProjects>
