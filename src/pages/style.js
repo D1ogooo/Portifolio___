@@ -1,9 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-
  margin: 0 auto;
-  
 `
 
 export const Main = styled.main`
@@ -59,10 +57,24 @@ export const Seta1 = styled.div`
 `
 
 export const LeftContentFirst = styled.section`
-  @media (max-width: 568px) {
-   text-align: center;
+  @media (max-width: 568px) { // Celular iphone 5
+    text-align: center;
+   
+    h2 {
+    text-align: center;
+   }
   }
   
+  @media (max-width: 62.5rem) { // Tablet
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+
+   h2 {
+    text-align: center;
+   }
+  }
+
   display: flex;
   flex-direction: column;
   padding: 6rem 2rem;
@@ -82,7 +94,6 @@ export const LeftContentFirst = styled.section`
  }
  
  h2 {
-  text-align: center;
   align-self: stretch;
   color: ${({ theme }) => theme.Text_Colors.text_primary};
   font-family: 'Heebo';
