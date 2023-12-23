@@ -14,7 +14,7 @@ export const DataProjects = [
   img: `${smartwatchImage}`,
   tech: [{ image: `${reactIcon}`},{ image: `${typescriptIcon}`}, { image: `${styledComponentsIcon}`}],
   title: 'Food jp',
-  text: "Esse foi um projeto desenvolvido em React onde fiz um clone de um site de uma lanchonete chamada FoodJP, a ideia era exercitar minhas habilidades com typescript e react onde trazem mais versatilidade para o software, ao lado deixo o código e o site no ar",
+  text: "Esse foi um projeto desenvolvido em React onde fiz um um clone de um site de uma lanchonete cha um clone de um site de uma lanchonete cha um clone de um site de uma lanchonete cha um clone de um site de uma lanchonete cha um clone de um site de uma lanchonete cha clone de um site de uma lanchonete chamada FoodJP, a ideia era exercitar minhas habilidades com typescript e react onde trazem mais versatilidade para o software, ao lado deixo o código e o site no ar",
  },
  {
   id: 1,

@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import { Container, PaiCards, Left, Right } from './style'
+import { Container, PaiCards, Left, Right, TechStyle } from './style'
 import { FirstButton, SecondButton, Return, SecondLeft, FirstLeft } from './style'
 import { DataProjects } from './data'
 import setaLeftUp from '../../assets/ArrowUpRight.svg'
@@ -25,17 +25,20 @@ export const Detail = () => {
        </Return>
        <img src={project.img}/>
       </FirstLeft>
+
       <SecondLeft>
-      {project.tech.map((tech) => (
-       <img src={tech.image}/>
-      ))}
-      <h2>{project.title}</h2>
-       <h3><span>My role:</span> Desenvolvedor fullstack</h3>
-       <h3><span>Team:</span> Marcus Souza (PM), Ilana Mallak (UX/UI Designer)</h3>
-      <p>{project.text}</p>
+       <TechStyle>
+        {project.tech.map((tech) => (
+         <img src={tech.image}/>
+        ))}
+       </TechStyle>
+        <h2>{project.title}</h2>
+        <h3><span>My role:</span> Desenvolvedor fullstack</h3>
+        <h3><span>Team:</span> Marcus Souza (PM), Ilana Mallak (UX/UI Designer)</h3>
+       <p>{project.text}</p>
       </SecondLeft>
-      </Left>
-      <Right>
+     </Left>
+     <Right>
       <h2>Dê uma olhada nesse projeto</h2>
       <FirstButton target='_blank'>
        <img src={GlobeSimple}/>

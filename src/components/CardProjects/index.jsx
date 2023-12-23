@@ -1,5 +1,5 @@
-import { useState, useRef, createContext } from 'react'
-import { CardPai, Card, FooterCard, HeaderCard, TitleProjects, ButtonCard, PaiButtonCard, ButtonCardTwo } from './style'
+import { useRef } from 'react'
+import { CardPai, Card, FooterCard, HeaderCard, TitleProjects, PaiButtonCard } from './style'
 import { CardsAparecer, CardImage } from './style'
 import { SubContainer }from './style'
 import { DataProjects } from '../../pages/Projetos/data'
@@ -61,15 +61,19 @@ export const MainThird = () => {
   </SubContainer>
 
    <PaiButtonCard> 
-   <ButtonCard id='seta_left' onClick={handleLeftClick}>
-    <img src={SetaParaOLado} />
-    Voltar
-   </ButtonCard>
+    <a className='seta_left' onClick={handleLeftClick}>
+     <span className='text'>Voltar</span>
+     <span className='icon'>
+      <img src={SetaParaOLado} />
+     </span>
+    </a>
 
-   <ButtonCardTwo onClick={handleRightClick}>
-    Ver mais
-    <img src={SetaParaOLado} />
-   </ButtonCardTwo>
+    <a className='seta_right' onClick={handleRightClick}>
+    <span className='text'>Ver mais</span>
+    <span className='icon'>
+     <img src={SetaParaOLado} />
+    </span>
+    </a>
   </PaiButtonCard>
 
 

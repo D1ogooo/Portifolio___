@@ -34,9 +34,9 @@ export const Header = () => {
         <li>
          <a href="#">PT</a>
         </li>
-        <li>
+        {/* <li>
          <img src={sumIcon}/>
-        </li>
+        </li> */}
        </ul>
      </FirstHeader>
 

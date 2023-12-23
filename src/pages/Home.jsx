@@ -1,6 +1,6 @@
 import { Main, MainFirst, MainSecond, Links } from './style'
 import { Container, LeftContentFirst, RightContentFirst, InternalLeft, Seta1 } from './style'
-import { RightSecond, LeftSecond, FirstChild, SecondChild, Meuresumo } from './style'
+import { RightSecond, LeftSecond, FirstChild, SecondChild, Meuresumo, SecondContainer } from './style'
 import { Footer } from '../components/Footer'
 import { MainThird } from '../components/CardProjects'
 import { MainFor } from '../components/CardContact'
@@ -30,13 +30,17 @@ function Home () {
       de websites responsivos com React e Node.
       </p>
       <Links>
-       <a href='#mainSecond' id="first_button">
-       <img src={CurriculoImage}/>
-        Meu resumo
+       <a href='#sobremin' className="first_button">
+        <span className="text">Meu resumo</span>
+        <span className="icon">
+         <img src={CurriculoImage}/>
+        </span>
        </a>
-       <a href="#footer" id="second_button">
-        Entrar em contato
-       <img src={setaDireitaImage}/>
+       <a href="#footer" className="second_button">
+        <span className="text">Entrar em contato</span>
+        <span className="icon">
+         <img src={setaDireitaImage}/>
+        </span>
        </a>
        <Seta1>
         <img src={SetaParaBaixo} id="imagem_setaprabaixo"/>
@@ -48,6 +52,8 @@ function Home () {
       <img src={imagemPrincipal}/>
      </RightContentFirst>
     </MainFirst>
+
+    <SecondContainer>
      <MainSecond>
       <RightSecond>
        <img src={GirlAndCat}/>
@@ -60,7 +66,7 @@ function Home () {
         <img src={tailwindicon}/>
         <img src={pythonicon} />
        </FirstChild>
-       <SecondChild>
+       <SecondChild id='sobremin'>
        <p>Sobre mim</p>
        <h2>Sou um Desenvolvedor apaixonado pela programação e estou em busca da minha primeira vaga</h2>
        <h3>Deis de criança sempre fui gostei de criar coisas, sou apaixonado por T.I e muito voltado para programação web,
@@ -71,6 +77,7 @@ function Home () {
        <MeuResumo/>
       </LeftSecond>
      </MainSecond>
+    </SecondContainer>
      <MainThird />
      <MainFor/>
     </Main>

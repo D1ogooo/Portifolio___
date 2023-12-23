@@ -91,6 +91,7 @@ export const HeaderCard = styled.div`
 
 export const CardPai = styled.div`
  display: flex;
+ justify-content: center;
  width: 80%;
  overflow-x: auto;
  overflow: hidden;
@@ -121,48 +122,125 @@ export const Card = styled(Link)`
 
 export const ButtonCard = styled.button`
  display: flex;
- align-items: center;
- 
- margin-top: 1.2rem;
- border-radius: .5rem;
- cursor: pointer;
- color: ${({ theme }) => theme.Text_Colors.text_primary};
- background-color: ${({ theme }) => theme.Surface_Colors.surface_secondary};
- font-family: 'Heebo';
- min-width: 7rem;
- padding: 1rem 1.5rem;
- justify-content: center;
- align-items: center;
- gap: 0.5rem;
- border: none;
+ align-items: flex-start;
+ gap: 1rem;
+
+ .seta_left {
+  width: 7rem;
+  padding: 1rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  margin-top: 1.2rem;
+  border-radius: .5rem;
+  background-color: ${({ theme }) => theme.Surface_Colors.surface_secondary};
+ }
 
  img {
   transform: scaleX(-1);
  }
-`
 
-export const ButtonCardTwo = styled.button`
- display: flex;
- align-items: center;
+ .text {
+  color: ${({ theme }) => theme.Text_Colors.text_primary};
+  text-align: center;
+  font-family: 'Heebo';
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+ }
 
- margin-top: 1.2rem;
- border-radius: .5rem;
- cursor: pointer;
- color: ${({ theme }) => theme.Text_Colors.text_primary};
- background-color: ${({ theme }) => theme.Surface_Colors.surface_secondary};
- font-family: 'Heebo';
- min-width: 7rem;
- padding: 1rem 1.5rem;
- justify-content: center;
- align-items: center;
- gap: 0.5rem;
- border: none;
+ @media (max-width: 62.5rem) {
+  .seta_left .text{
+   display: none;
+  }
+
+  .second_button .text {
+   display: none;
+  }
+
+
+  .seta_left .text {
+    margin: auto;
+  }
+
+  .seta_left .text{
+    margin: auto;
+  }
+}
 `
 
 export const PaiButtonCard = styled.div`
  display: flex;
  justify-content: center;
  gap: 2rem;
+ 
+ :first-child img {
+  transform: scaleX(-1);
+ }
+
+ .seta_left,.seta_right {
+  margin-top: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  text-decoration: none;
+  min-width: 2rem;
+  padding: 1rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background: ${({ theme }) => theme.Surface_Colors.surface_secondary};
+  border-radius: .5rem;
+ }
+
+ .text {
+  color: ${({ theme }) => theme.Text_Colors.text_primary};
+  text-align: center;
+  font-family: 'Heebo';
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+ }
+
+ @media (max-width: 62.5rem) {
+  .seta_left .text{
+   display: none;
+  }
+
+  .seta_right .text {
+   display: none;
+  }
+
+  .seta_left .text {
+    margin: auto;
+  }
+
+  .seta_right .text{
+    margin: auto;
+  }
+ }
+`
+
+export const ButtonCardTwo = styled.button`
+ display: flex;
+ align-items: center;
+ margin-top: 1.2rem;
+ border-radius: .5rem;
+ cursor: pointer;
+ color: ${({ theme }) => theme.Text_Colors.text_primary};
+ background-color: ${({ theme }) => theme.Surface_Colors.surface_secondary};
+ font-family: 'Heebo';
+ min-width: 7rem;
+ padding: 1rem 1.5rem;
+ justify-content: center;
+ align-items: center;
+ gap: 0.5rem;
+ border: none;
 `
 
 export const CardImage = styled.section`

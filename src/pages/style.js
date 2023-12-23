@@ -59,6 +59,10 @@ export const Seta1 = styled.div`
 `
 
 export const LeftContentFirst = styled.section`
+  @media (max-width: 568px) {
+   text-align: center;
+  }
+  
   display: flex;
   flex-direction: column;
   padding: 6rem 2rem;
@@ -78,6 +82,7 @@ export const LeftContentFirst = styled.section`
  }
  
  h2 {
+  text-align: center;
   align-self: stretch;
   color: ${({ theme }) => theme.Text_Colors.text_primary};
   font-family: 'Heebo';
@@ -97,44 +102,17 @@ export const LeftContentFirst = styled.section`
   line-height: 150%;
 }
 
- #first_button {
+ .second_button {
   display: flex;
   text-decoration: none;
-  background: ${({ theme }) => theme.Surface_Colors.surface_secondary};
-  min-width: 7rem;
+  min-width: 2rem;
   padding: 1rem 1.5rem;
   justify-content: center;
   align-items: center;
-  gap: .5rem;
-  border-radius: .5rem;
-
+  gap: 0.5rem;
+  background: #8A42DB;
   color: ${({ theme }) => theme.Text_Colors.text_primary};
-  text-align: center;
-  font-family: 'Heebo';
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%;
- }
-
- #second_button {
-  display: flex;
-  text-decoration: none;
-  background-color: #8A42DB;
-  min-width: 7rem;
-  padding: 1rem 1.5rem;
-  justify-content: center;
-  align-items: center;
-  gap: .5rem;
   border-radius: .5rem;
-
-  color: ${({ theme }) => theme.Text_Colors.text_primary};
-  text-align: center;
-  font-family: 'Heebo';
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%;
  }
 `
 
@@ -156,6 +134,47 @@ export const Links = styled.div`
  display: flex;
  align-items: flex-start;
  gap: 1rem;
+ 
+ .text {
+  color: ${({ theme }) => theme.Text_Colors.text_primary};
+  text-align: center;
+  font-family: 'Heebo';
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+ }
+
+ @media (max-width: 62.5rem) {
+  .first_button .text{
+   display: none;
+  }
+
+  .second_button .text {
+   display: none;
+  }
+
+
+  .first_button .text {
+    margin: auto;
+  }
+
+  .second_button .text{
+    margin: auto;
+  }
+ }
+
+ .first_button {
+  display: flex;
+  text-decoration: none;
+  min-width: 2rem;
+  padding: 1rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background: ${({ theme }) => theme.Surface_Colors.surface_secondary};
+  border-radius: .5rem;
+ }
 `
 
 export const MainSecond = styled.div`
@@ -164,7 +183,7 @@ export const MainSecond = styled.div`
   margin-bottom: 300px;
   height: 59.9rem;
  }
- 
+
  background-color: #2C243B;
  display: flex;
  align-items: center;
@@ -174,12 +193,26 @@ export const MainSecond = styled.div`
  margin-bottom: 3.125rem;
 `
 
+export const SecondContainer = styled.div`
+ @media (min-width: 62.5rem) {
+  width: 95%;
+  margin: 0 auto;
+ }
+`
+
 export const RightSecond = styled.div`
  img {
   width: 29.6627rem;
   height: 20.916rem;
   flex-shrink: 0;
- } 
+ }
+ 
+ @media (max-width: 568px) {
+  img {
+   width: 20.6627rem;
+   height: 20.916rem;
+  }
+ }
 `
 
 export const LeftSecond = styled.div`
@@ -249,5 +282,5 @@ h3 {
  font-style: normal;
  font-weight: 400;
  line-height: 150%;
-} */
+} 
 `

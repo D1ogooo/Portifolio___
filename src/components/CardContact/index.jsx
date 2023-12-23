@@ -8,13 +8,12 @@ import linkedinimage from '../../assets/logo_linkedin 1.svg'
 
 export const MainFor = () => {
   const [mensagem, setMensagem] = useState()
+  const messageWhatsap = mensagem ? mensagem.split(' ').join('%20') : ''
   
   function handleInputChange (e) {
    setMensagem(e.target.value)
   }
 
-  const messageWhatsap = mensagem ? mensagem.split(' ').join('%20') : ''
-  
   return (
    <>
     <Container>

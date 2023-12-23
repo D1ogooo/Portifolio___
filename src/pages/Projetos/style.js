@@ -9,9 +9,14 @@ export const Container = styled.div`
 export const PaiCards = styled.div`
  display: flex;
  justify-content: center;
+ flex-wrap: wrap;
  align-items: start;
  gap: 1.5rem;
  margin-top: 2rem;
+
+ @media (max-width: 62.5rem) { //Tablet
+  margin-bottom: 2rem;
+ }
 `
 
 export const Left = styled.section`
@@ -20,6 +25,8 @@ export const Left = styled.section`
 `
 
 export const Right = styled.section`
+
+ 
  h2 {
  color: ${({ theme }) => theme.Text_Colors.text_primary};
  font-family: 'Heebo';
@@ -103,13 +110,24 @@ export const SecondButton = styled.a`
 `
 
 export const SecondLeft = styled.div`
+ @media (max-width: 62.5rem) { // Tablet
+  width: 40rem;
+  height: 28.25rem;
+ }
+
+ @media (max-width: 568px) { // Celular iphone 5
+  width: 24rem;
+  height: 40rem;
+ }
+
  margin-top: -1.27rem;
  border-radius: 0px 0px .5rem .5rem;
  align-self: stretch;
  background-color: ${({ theme }) => theme.Surface_Colors.surface_primary};
  display: flex;
  width: 48rem;
- height: 29.375rem;
+ max-height: 30.375rem;
+ overflow-y: auto;
  padding: 1.1875rem 3rem 3rem 3rem;
  flex-direction: column;
  align-items: flex-start;
@@ -122,26 +140,25 @@ export const SecondLeft = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: 125%;
-}
+ }
  
+ h3 {
+  color: ${({ theme }) => theme.Text_Colors.text_secondary};
+  font-family: 'Heebo';
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+ }
 
-h3 {
- color: ${({ theme }) => theme.Text_Colors.text_secondary};
- font-family: 'Heebo';
- font-size: 1.125rem;
- font-style: normal;
- font-weight: 400;
- line-height: 180%;
-}
-
-span {
- color: ${({ theme }) => theme.Text_Colors.text_secondary};
- font-family: 'Heebo';
- font-size: 1.125rem;
- font-style: normal;
- font-weight: 700;
- line-height: 180%;
-}
+ span {
+  color: ${({ theme }) => theme.Text_Colors.text_secondary};
+  font-family: 'Heebo';
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 180%;
+ }
 
 p {
  color: ${({ theme }) => theme.Text_Colors.text_secondary};
@@ -168,9 +185,22 @@ export const First = styled.div`
  font-weight: 400;
  line-height: 150%;
  }
- `
+`
 
 export const FirstLeft = styled.div`
+ margin: 0 auto;
+
+ 
+ @media (max-width: 62.5rem) { // Tablet
+  width: 40rem;
+  height: 21.25rem;
+}
+
+ @media (max-width: 568px) { //Celular iphone 5
+  width: 19rem;
+  height: 11.7rem;
+ }
+
  width: 48rem;
  height: 21.25rem;
  img {
@@ -204,5 +234,17 @@ export const FirstLeft = styled.div`
   img {
    width: 1.5rem;
    height: 1.5rem;
+  }
+ `
+
+ export const TechStyle = styled.div`
+  display: flex;
+  gap: 1rem;
+  img {
+    width: 50px;
+  }
+
+  @media (max-width: 568px) { //Celular iphone 5
+   width: 30px;
   }
  `
