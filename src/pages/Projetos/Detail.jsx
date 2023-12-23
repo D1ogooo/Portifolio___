@@ -33,8 +33,7 @@ export const Detail = () => {
         ))}
        </TechStyle>
         <h2>{project.title}</h2>
-        <h3><span>My role:</span> Desenvolvedor fullstack</h3>
-        <h3><span>Team:</span> Marcus Souza (PM), Ilana Mallak (UX/UI Designer)</h3>
+        <h3><span>Minha função:</span> Desenvolvedor fullstack</h3>
        <p>{project.text}</p>
       </SecondLeft>
      </Left>
