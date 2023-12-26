@@ -1,5 +1,11 @@
 import styled from 'styled-components'
 
+export const FirstHeader = styled.div`
+ @media (max-width: 62.5rem) { // Tablet
+  display: none;
+ }
+`
+
 export const Container = styled.div`
  width: 100%;
  margin: 0 auto;
@@ -41,36 +47,6 @@ export const Container = styled.div`
  }
 `
 
-export const FirstHeader = styled.div`
- @media (max-width: 62.5rem) { // Tablet
-  display: none;
- }
-`
-
-export const ImageHeaderSecond = styled.div`
- display: flex;
- align-items: center;
- display: none;
- 
- @media (max-width: 62.5rem) { // Tablet
-  display: block;
- }
- 
- #icon_hamb {
-  cursor: pointer;
-  width: 1.875rem;
-  height: 1.875rem;
-  flex-shrink: 0;
-}
-`
-
-export const SecondHeader = styled.div`
- display: flex;
- align-items: center;
- justify-content: center;
- flex-direction: column;
-`
-
 export const HeaderStyle = styled.header`
  width: 100%;
  height: 4.5rem;
@@ -93,4 +69,3 @@ export const Logo = styled.div`
  }
 }
 `
-

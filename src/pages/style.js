@@ -4,9 +4,7 @@ export const Container = styled.div`
  margin: 0 auto;
 `
 
-export const Main = styled.main`
- 
-`
+export const Main = styled.main``
 
 export const MainFirst = styled.div`
  margin-top: 6.375rem;
