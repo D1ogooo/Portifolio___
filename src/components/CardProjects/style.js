@@ -92,12 +92,16 @@ export const HeaderCard = styled.div`
 export const CardPai = styled.div`
  display: flex;
  justify-content: center;
- width: 80%;
+ width: 90%;
  overflow-x: auto;
  overflow: hidden;
  scroll-behavior: smooth;
  flex-shrink: 0;
  gap: 2rem;
+
+ @media (max-width:62.5rem) {
+  justify-content: start;
+ }
 `
 
 export const Card = styled(Link)`

@@ -231,6 +231,11 @@ export const LeftSecond = styled.div`
  gap: 2rem;
  width: 37rem;
  height: 21.5rem;
+
+ @media (max-width: 75rem) {
+  align-content: center;
+  justify-content: center;
+ }
 `
 
 export const Meuresumo = styled.button`
@@ -258,6 +263,10 @@ export const Meuresumo = styled.button`
 export const FirstChild = styled.div`
  display: flex;
  gap: 1.5rem;
+
+ @media (max-width: 75rem) {
+  margin:  0 auto;
+ }
 `
 
 export const SecondChild = styled.div`
@@ -266,23 +275,31 @@ export const SecondChild = styled.div`
  align-items: flex-start;
  gap: .4rem;
  
- p {
- color: #7DFFAF;
- font-family: 'Kalam';
- font-size: 1rem;
- font-style: normal;
- font-weight: 400;
- line-height: 100%;
+ @media (max-width: 75rem) {
+  align-items: center;
+  h2,h3 {
+    text-align: center;
+    width: 330px;
+  }
  }
 
-h2 {
- color: #F5F6F6;
- font-family: 'Heebo';
- font-size: 1.5rem;
- font-style: normal;
- font-weight: 500;
- line-height: 2rem;
-}
+ p {
+  color: #7DFFAF;
+  font-family: 'Kalam';
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+ }
+
+ h2 {
+  color: #F5F6F6;
+  font-family: 'Heebo';
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem;
+ }
 
 h3 {
  color: #CDD0D4;
