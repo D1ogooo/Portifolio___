@@ -1,6 +1,6 @@
 import { Main, MainFirst, MainSecond, Links } from './style'
 import { Container, LeftContentFirst, RightContentFirst, InternalLeft, Seta1 } from './style'
-import { RightSecond, LeftSecond, FirstChild, SecondChild, Meuresumo, SecondContainer } from './style'
+import { RightSecond, LeftSecond, FirstChild, SecondChild, Meuresumo, SecondContainer, Abc } from './style'
 import { Footer } from '../components/Footer'
 import { MainThird } from '../components/CardProjects'
 import { MainFor } from '../components/CardContact'
@@ -74,7 +74,9 @@ function Home () {
         sou uma pessoa bastante observadora então acaba que até com coisas do dia dia acabo tendo ideias de projetos então pode-se dizer que sou bastante criativo
        </h3>
        </SecondChild>
-       <MeuResumo/>
+       <Abc>
+        <MeuResumo/>
+       </Abc>
       </LeftSecond>
      </MainSecond>
     </SecondContainer>

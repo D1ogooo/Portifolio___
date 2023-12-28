@@ -188,17 +188,18 @@ export const Links = styled.div`
 
 export const MainSecond = styled.div`
  @media (max-width: 75rem) {
+  width: 100%;
   flex-wrap: wrap;
-  margin-bottom: 300px;
-  height: 59.9rem;
+  margin-bottom: 200px;
+  height: 80.9rem;
  }
-
+ 
+ height: 31.9rem;
  background-color: #2C243B;
  display: flex;
  align-items: center;
  justify-content: space-around;
  border-radius: 1rem; 
- height: 31.25rem;
  margin-bottom: 3.125rem;
 `
 
@@ -238,6 +239,14 @@ export const LeftSecond = styled.div`
  }
 `
 
+export const Abc = styled.div`
+ width: 100%;
+ @media (max-width: 62.5rem) {
+  display: flex;
+  justify-content: center;
+ }
+`
+
 export const Meuresumo = styled.button`
  display: flex;
  width: 11.875rem;
@@ -266,6 +275,7 @@ export const FirstChild = styled.div`
 
  @media (max-width: 75rem) {
   margin:  0 auto;
+  margin-top: -27rem;
  }
 `
 
