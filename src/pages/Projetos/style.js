@@ -191,15 +191,16 @@ export const First = styled.div`
 
 export const FirstLeft = styled.div`
  margin: 0 auto;
-
+ width: 100%;
  
  @media (max-width: 62.5rem) { // Tablet
   width: 40rem;
   height: 21.25rem;
+  margin-top: 50px;
 }
 
  @media (max-width: 568px) { //Celular iphone 5
-  width: 19rem;
+  width: 100%;
   height: 11.7rem;
  }
 
@@ -208,8 +209,12 @@ export const FirstLeft = styled.div`
  img {
   border-radius: .5rem .5rem 0rem 0rem;
   width: 100%;
-  height: auto;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
  }
+ margin-bottom: 21px;
 `
 
  export const Return = styled(Link)`

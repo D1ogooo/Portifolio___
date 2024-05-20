@@ -1,3 +1,4 @@
+import violetoImage from '../../assets/1715575530078.jpeg'
 import primeiroProjetoImage from '../../pages/Projetos/img/primeiro projeto.png'
 import smartwatchImage from '../Projetos/img/smart watch image.png'
 import TodolistImage from '../../assets/todolist ignite image.png'
@@ -10,6 +11,15 @@ import typescriptIcon from '../Projetos/img/typescript-original.svg'
 export const DataProjects = [
  {
   id: 0,
+  principalText: 'Um site de troca de mensagens',
+  img: `${violetoImage}`,
+  tech: [{ image: `${reactIcon}`},{ image: `${typescriptIcon}`}, { image: `${styledComponentsIcon}`}],
+  title: '🌸 Violeta',
+  link_github: 'https://github.com/D1ogooo/Violetta___',
+  text: "A ideia era criar um site onde pessoas pudessem falar sobre o que estavam pensando no geral e não seriam identificadas, nenhum usuário possui nome e a imagem fica por escolha do mesmo",
+ },
+ {
+  id: 1,
   principalText: 'Um cardápio fictício de um site de lanches',
   img: `${primeiroProjetoImage}`,
   tech: [{ image: `${reactIcon}`},{ image: `${typescriptIcon}`}, { image: `${styledComponentsIcon}`}],
@@ -18,7 +28,7 @@ export const DataProjects = [
   text: "Esse foi um projeto desenvolvido em React onde fiz um um clone de um site de uma lanchonete cha um clone de um site de uma lanchonete cha um clone de um site de uma lanchonete cha um clone de um site de uma lanchonete cha um clone de um site de uma lanchonete cha clone de um site de uma lanchonete chamada FoodJP, a ideia era exercitar minhas habilidades com typescript e react onde trazem mais versatilidade para o software, ao lado deixo o código e o site no ar",
  },
  {
-  id: 1,
+  id: 2,
   principalText: 'Cadastro de produtos',
   img: `${CadastroCamisas}`,
   tech: [{ image: `${reactIcon}`},{ image: `${jsIcon}`}, { image: `${styledComponentsIcon}`}],
@@ -28,7 +38,7 @@ export const DataProjects = [
   deploy: 'https://teste-freela.vercel.app/'  
 },
  {
-  id: 2,
+  id: 3,
   principalText: 'Um site fictício de avaliação do smartwatch',
   img: `${smartwatchImage}`,
   tech: [{ image: `${reactIcon}`},{ image: `${typescriptIcon}`}],
@@ -36,12 +46,13 @@ export const DataProjects = [
   link_github: 'https://github.com/D1ogooo/SmartWatch',
 },
  {
-  id: 3,
+  id: 4,
   principalText: 'Um todolist para guardar suas tarefas',
   img: `${TodolistImage}`,
   tech: [{ image: `${reactIcon}`},{ image: `${jsIcon}`}],
   title: 'Todo list',
   link_github: 'https://github.com/D1ogooo/TodoList-ignite',
   text: "Esse projeto foi feito para poder exercitar meus conhecimentos em React e styled componentsm onde pode aprender sobre o poder do React e mais especificamente dos Hooks de gerenciamento de estados",
+  deploy: 'https://todo-list-ignite-mu.vercel.app/' 
  },
 ]

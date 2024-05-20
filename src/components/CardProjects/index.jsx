@@ -34,7 +34,7 @@ export const MainThird = () => {
    </TitleProjects>
    
    <SubContainer>
-   <CardPai ref={cardPai} >
+   <CardPai ref={cardPai}>
     {DataProjects.map((info) => (
     <Card to={`/projects/${info.id}`} key={info.id}>
      <CardImage>
