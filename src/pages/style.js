@@ -223,6 +223,11 @@ export const RightSecond = styled.div`
    height: 20.916rem;
   }
  }
+
+ @media (max-width: 75rem) {
+  margin-bottom: 8rem;
+  margin-top: 8rem;
+ }
 `
 
 export const LeftSecond = styled.div`
@@ -233,19 +238,14 @@ export const LeftSecond = styled.div`
  width: 37rem;
  height: 21.5rem;
 
- @media (max-width: 75rem) {
+ @media (max-width: 1200px) {
   align-content: center;
   justify-content: center;
+  align-items: center;
  }
 `
 
-export const Abc = styled.div`
- width: 100%;
- @media (max-width: 62.5rem) {
-  display: flex;
-  justify-content: center;
- }
-`
+export const Abc = styled.div``
 
 export const Meuresumo = styled.button`
  display: flex;
@@ -280,43 +280,41 @@ export const FirstChild = styled.div`
 `
 
 export const SecondChild = styled.div`
- display: flex;
- flex-direction: column;
- align-items: flex-start;
- gap: .4rem;
- 
- @media (max-width: 75rem) {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  
   align-items: center;
-  h2,h3 {
+  @media (max-width: 75rem) {
+    align-items: center;
     text-align: center;
-    width: 330px;
+    justify-content: center;
   }
- }
 
- p {
-  color: #7DFFAF;
-  font-family: 'Kalam';
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%;
- }
+  p {
+    color: #7DFFAF;
+    font-family: 'Kalam';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
 
- h2 {
-  color: #F5F6F6;
-  font-family: 'Heebo';
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 2rem;
- }
+  h2 {
+    color: #F5F6F6;
+    font-family: 'Heebo';
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem;
+  }
 
-h3 {
- color: #CDD0D4;
- font-family: 'Heebo';
- font-size: 1rem;
- font-style: normal;
- font-weight: 400;
- line-height: 150%;
-} 
-`
+  h3 {
+    color: #CDD0D4;
+    font-family: 'Heebo';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+`;

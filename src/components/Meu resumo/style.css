@@ -140,3 +140,79 @@ button {
    transform: translate(-50%, -50%) scale(1);
   }
 }
+
+.Button.violet {
+  display: flex;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #8A42DB;
+  width: 7rem;
+  padding: .7rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: stretch;
+  color: #F5F6F6;
+  text-align: center;
+  font-family: 'Heebo';
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+@media (max-width: 1201px) { 
+  .Button.violet {
+    width: 6.5rem;
+    padding: .6rem 1.3rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) { 
+  .Button.violet {
+    width: 6rem;
+    padding: .5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) { 
+  .Button.violet {
+    width: 5rem;
+    padding: .3rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 62.5rem) { 
+  .first_button .text{
+    display: none;
+  }
+
+  .second_button .text {
+    display: none;
+  }
+
+  .first_button .text {
+    margin: auto;
+  }
+
+  .second_button .text{
+    margin: auto;
+  }
+}
+
+.MainFirst {
+  margin-top: 6.375rem;
+  margin-bottom: .5rem;
+  justify-content: space-around;
+  display: flex;
+
+  @media (max-width: 62.5rem) { 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -75,8 +75,6 @@ export const MainThird = () => {
     </span>
     </a>
   </PaiButtonCard>
-
-
  </>
  )
 }
