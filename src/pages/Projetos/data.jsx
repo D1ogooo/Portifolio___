@@ -1,4 +1,7 @@
 import violetoImage from '../../assets/1715575530078.jpeg'
+import MoonshopImage from '../../assets/fotoMoonshop.png'
+import CoffeeDeliveryimagem from '../../assets/CoffeeDeliveryimagem.png'
+import DevstoreImage from '../../assets/DevstoreImage.jpg'
 import primeiroProjetoImage from '../../pages/Projetos/img/primeiro projeto.png'
 import smartwatchImage from '../Projetos/img/smart watch image.png'
 import TodolistImage from '../../assets/todolist ignite image.png'
@@ -6,29 +9,39 @@ import CadastroCamisas from '../../assets/imagem do projeto de cadastro de produ
 import reactIcon from '../Projetos/img/react icon.svg'
 import styledComponentsIcon from '../Projetos/img/styled-components.svg'
 import jsIcon from '../Projetos/img/logo javascript.svg'
+import nextIcon from '../../assets/icon_next.png'
 import typescriptIcon from '../Projetos/img/typescript-original.svg'
 
 export const DataProjects = [
  {
   id: 0,
-  principalText: 'Um site de troca de mensagens',
-  img: `${violetoImage}`,
-  tech: [{ image: `${reactIcon}`},{ image: `${typescriptIcon}`}, { image: `${styledComponentsIcon}`}],
-  title: '🌸 Violeta',
-  link_github: 'https://github.com/D1ogooo/Violetta___',
-  text: "A ideia era criar um site onde pessoas pudessem falar sobre o que estavam pensando no geral e não seriam identificadas, nenhum usuário possui nome e a imagem fica por escolha do mesmo",
+  principalText: 'Um site fictício de venda de casacos',
+  img: `${DevstoreImage}`,
+  tech: [{ image: `${nextIcon}`},{ image: `${typescriptIcon}`}, { image: `${styledComponentsIcon}`}],
+  title: '🧥 DevStore',
+  link_github: 'https://github.com/D1ogooo/DevStore-Next-project',
+  text: "📜 Opa galera, com vão? ultimamente venho dando continuidade nos estudos em React e resolvi começar a me aprofundar no seu framework NEXT, sinceramente estou achando bem interessante já que ele pegou várias features do React e melhorou, sendo que que agora nem precisamos mais criar uma <tabela de rotas/> por assim dizer, podemos simplesmente usar uma pasta e dentro dessas pasta podemos colocar nosso arquivo page e por si só já transformador em uma rota, sem falar da criação de APIs que o NEXT possibilita, claramente em projetos grandes não vamos usar uma API assim junta com o Front-end porem achei interessante o fato de podermos criar uma API no próprio projeto NEXT pois em projetos pequenos mesmo, projetos de teste / portifólio fica bem mais prático.",
  },
  {
   id: 1,
-  principalText: 'Um cardápio fictício de um site de lanches',
-  img: `${primeiroProjetoImage}`,
+  principalText: 'Um site de uma loja de detecção de trapaças',
+  img: `${MoonshopImage}`,
   tech: [{ image: `${reactIcon}`},{ image: `${typescriptIcon}`}, { image: `${styledComponentsIcon}`}],
-  title: 'Food jp',
-  link_github: 'https://github.com/D1ogooo/FoodJP',
-  text: "Esse foi um projeto desenvolvido em React onde fiz um um clone de um site de uma lanchonete cha um clone de um site de uma lanchonete cha um clone de um site de uma lanchonete cha um clone de um site de uma lanchonete cha um clone de um site de uma lanchonete cha clone de um site de uma lanchonete chamada FoodJP, a ideia era exercitar minhas habilidades com typescript e react onde trazem mais versatilidade para o software, ao lado deixo o código e o site no ar",
+  title: '🌑 MoonShop',
+  link_github: 'https://github.com/D1ogooo/Moonshop---frontend',
+  text: "MoonShop é o projeto de uma loja de screenshare, uma loja de detecção de trapaças no jogo Minecraft e FiveM temos a apresentação dos cursos da mesma e também dos contatos de suporte, neste momento apenas a parte do frontend está praticamente completa , falta ainda a responsividade e a integração com métodos de pagamentos, coisa que já é mais puxada para o lado do backend",
  },
  {
   id: 2,
+  principalText: 'Um site de um cardápio digital',
+  img: `${CoffeeDeliveryimagem}`,
+  tech: [{ image: `${reactIcon}`},{ image: `${typescriptIcon}`}, { image: `${styledComponentsIcon}`}],
+  title: '☕ Coffee delivery',
+  link_github: 'https://github.com/D1ogooo/CoffeeDelivery',
+  text: "O Coffee delivery é um projeto de um cardápio digital, nele eu pode exercitar meus conhecimentos sobre validação de formulários e criação de hooks, a ideia é que as pessoas possam selecionar o café desejado junto com sua quantidade e possa ver os itens dentro do carrinho de compras, no final com tudo verificado a entrega será feito ao cliente",
+ },
+ {
+  id: 3,
   principalText: 'Cadastro de produtos',
   img: `${CadastroCamisas}`,
   tech: [{ image: `${reactIcon}`},{ image: `${jsIcon}`}, { image: `${styledComponentsIcon}`}],
@@ -37,22 +50,4 @@ export const DataProjects = [
   text: "A ideia era criar um projeto de catalogo de produtos, onde o produto destaque poderia ficar no primeiro lugar e poder ser removido, a ideia era mais poder se exercitar com verificação de formulários, a ideia era principalmente exercitar meus conhecimentos com React-hook-form e Zod, que são muito usados hoje em dia por conta de sua praticidade",
   deploy: 'https://teste-freela.vercel.app/'  
 },
- {
-  id: 3,
-  principalText: 'Um site fictício de avaliação do smartwatch',
-  img: `${smartwatchImage}`,
-  tech: [{ image: `${reactIcon}`},{ image: `${typescriptIcon}`}],
-  title: 'SmartWatch',
-  link_github: 'https://github.com/D1ogooo/SmartWatch',
-},
- {
-  id: 4,
-  principalText: 'Um todolist para guardar suas tarefas',
-  img: `${TodolistImage}`,
-  tech: [{ image: `${reactIcon}`},{ image: `${jsIcon}`}],
-  title: 'Todo list',
-  link_github: 'https://github.com/D1ogooo/TodoList-ignite',
-  text: "Esse projeto foi feito para poder exercitar meus conhecimentos em React e styled componentsm onde pode aprender sobre o poder do React e mais especificamente dos Hooks de gerenciamento de estados",
-  deploy: 'https://todo-list-ignite-mu.vercel.app/' 
- },
 ]

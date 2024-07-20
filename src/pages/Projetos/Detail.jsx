@@ -30,7 +30,7 @@ export const Detail = () => {
       <SecondLeft>
        <TechStyle>
         {project.tech.map((tech) => (
-         <img src={tech.image}/>
+         <img src={tech.image} key={tech} alt=""/>
         ))}
        </TechStyle>
         <h2>{project.title}</h2>
