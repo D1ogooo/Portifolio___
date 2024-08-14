@@ -27,7 +27,7 @@ export const DataProjects = [
   { image: `${tailwindIcon}`}, { image: `${mongodbIcon}`},
   { image: `${nodejsImage}`}],
   title: '🥁 DrumNotes',
-  link_github: 'https://lnkd.in/et77shzs',
+  link_github: 'https://github.com/D1ogooo/DrumNotes',
   deploy: 'https://drum-notes-frontend.vercel.app/',
   text: "📜 A ideia do projeto é que eu possa catalogar as aulas que já assisti e também aquelas que ainda preciso assistir, mostrando meu progresso até o momento. E, claro, poder excluir, editar e adicionar as aulas, onde todas ficarão armazenadas no catalogo de cada usuário.",
  },
