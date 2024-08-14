@@ -20,7 +20,7 @@ import nextIcon from '../../assets/icon_next.png'
 export const DataProjects = [
  {
   id: 0,
-  principalText: 'Um site fictício de venda de casacos',
+  principalText: 'Um site de estudo de instrumentos musicais',
   img: `${fullStackImage}`,
   tech:
   [{ image: `${reactIcon}`},{ image: `${typescriptIcon}`},
