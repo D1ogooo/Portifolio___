@@ -31,8 +31,7 @@ function Home () {
                 <h1>Olá, eu sou o Diogo</h1>
                 <h2>Desenvolvedor Frontend</h2>
                 <p>
-                  Com 2 anos de experiência em Desenvolvimento web. Sou especialista em desenvolvimento
-                  de websites responsivos com React e Node.
+                  Com 3 anos de experiência em Desenvolvimento web, Sou focado em Frontend com conhecimentos em Backend
                 </p>
                 <Links>
                   <a href='#sobremin' className="first_button">
