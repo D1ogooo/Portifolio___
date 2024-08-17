@@ -38,7 +38,7 @@ export const MainFor = () => {
      </Left>
      <Right>
      <ComentContainer placeholder="Sua mensagem" value={mensagem} onChange={handleInputChange}/>
-      <ButtonMessage target="_blank" href={`https://wa.me/988004330/?text=${messageWhatsap}`}>
+      <ButtonMessage target="_blank" href={`https://wa.me/2798800-4330/?text=${messageWhatsap}`}>
        Enviar mensagem
       <img src={SetaDireita}/>
       </ButtonMessage>
