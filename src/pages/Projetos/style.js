@@ -217,7 +217,7 @@ export const FirstLeft = styled.div`
  margin-bottom: 21px;
 `
 
- export const Return = styled(Link)`
+export const Return = styled(Link)`
   &:hover {
    transition: 500ms all;
    box-shadow: 0rem 0rem 3rem 0rem rgba(125, 255, 175, 0.24);
@@ -244,7 +244,7 @@ export const FirstLeft = styled.div`
   }
  `
 
- export const TechStyle = styled.div`
+export const TechStyle = styled.div`
   display: flex;
   gap: 1rem;
   img {
