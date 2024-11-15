@@ -12,7 +12,6 @@ import setaLeftUp from "../../assets/ArrowUpRight.svg";
 import GlobeSimple from "../../../src/pages/Projetos/img/GlobeSimple.svg";
 import GithubLogo from "../../assets/logo-github 1.svg";
 import ReturnImage from "../../assets/ArrowLeft.svg";
-import reactIcon from "../../assets/react icon.svg";
 
 export const Detail = () => {
 	const { id } = useParams();
@@ -28,9 +27,9 @@ export const Detail = () => {
 				<Left>
 					<FirstLeft>
 						<Return to="/">
-							<img src={ReturnImage} />
+							<img src={ReturnImage} alt="" />
 						</Return>
-						<img src={project.img} />
+						<img src={project.img} alt="" />
 					</FirstLeft>
 
 					<SecondLeft>
@@ -50,15 +49,15 @@ export const Detail = () => {
 					<h2>Dê uma olhada nesse projeto</h2>
 					{project.deploy && (
 						<FirstButton target="_blank" href={project.deploy}>
-							<img src={GlobeSimple} />
+							<img src={GlobeSimple} alt="" />
 							Demonstração
-							<img src={setaLeftUp} />
+							<img src={setaLeftUp} alt="" />
 						</FirstButton>
 					)}
 					<SecondButton href={project.link_github} target="_blank">
-						<img src={GithubLogo} />
+						<img src={GithubLogo} alt="" />
 						Código
-						<img src={setaLeftUp} />
+						<img src={setaLeftUp} alt="" />
 					</SecondButton>
 				</Right>
 			</PaiCards>
