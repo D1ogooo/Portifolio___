@@ -1,5 +1,5 @@
 import * as AlertDialog from "@radix-ui/react-alert-dialog";
-import "@radix-ui/colors/blackA.css";
+import { blackA } from "@radix-ui/colors";
 import "../Meu resumo/style.css";
 
 export const MeuResumo = () => {
@@ -18,11 +18,11 @@ export const MeuResumo = () => {
 						</AlertDialog.Title>
 						<AlertDialog.Description className="AlertDialogDescription">
 							😁 Opa, meu nome é Diogo e sou Desenvolvedor Frontend fazem 3
-							anos, atualmente venho prestando servicos tanto{" "}
-							<span style={{ color: "green" }}>Frontend</span> como
-							<span style={{ color: "green" }}> Backend</span>, venho dando
-							continuidade em meus estudos na área e buscando evoluir cada vez
-							mais
+							anos, atualmente venho prestando serviços tanto{" "}
+							<span style={{ color: blackA.blackA9 }}>Frontend</span> como
+							<span style={{ color: blackA.blackA9 }}> Backend</span>, venho
+							dando continuidade em meus estudos na área e buscando evoluir cada
+							vez mais
 						</AlertDialog.Description>
 						<div
 							style={{ display: "flex", gap: 25, justifyContent: "flex-end" }}
