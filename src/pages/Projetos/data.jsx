@@ -30,8 +30,8 @@ export const DataProjects = [
 			{ image: `${Postgree}` },
 		],
 		title: "🖱️ CyberCore",
-		link_github: "https://github.com/D1ogooo/DrumNotes",
-		deploy: "https://lnkd.in/dUW6YZ6w",
+		link_github: "https://github.com/D1ogooo/CyberCore",
+		deploy: "https://cybercore-frontend.vercel.app",
 		text: "📜 A ideia de criar o Cybercore era poder criar um site de perifericos de computador, estava lembrando de lugares que tinham esses sitemas que facilitam na busca do cliente e pensei em fazer o meu, esse projeto também serve bastante para poder me exercitar na nova tecnologia que estou estudando, o prisma, alem de também poder me desenvolver em bancos relacionais como postgreesql",
 	},
 	{
