@@ -1,25 +1,28 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
- width: 95%;
- margin:  0 auto;
- margin-top: 4.5rem;
- display: flex;
- justify-content: space-evenly;
- padding: 4.5rem;
- align-items: flex-start;
- flex: 1 0 0;
- border-radius: 1rem;
- background-color: #2C243B;
+  width: 95%;
+  margin: 4.5rem auto 0;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4.5rem;
+  align-items: flex-start;
+  border-radius: 1rem;
+  background-color: #2C243B;
 
- @media (max-width: 62.5rem) {
-  flex-wrap: wrap;
- }
+  @media (max-width: 62.5rem) {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    align-items: center;
+    gap: 2rem;
+  }
 `
 
+
 export const Left = styled.div`
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
 
  img {
   width: 10rem;
@@ -64,34 +67,32 @@ export const Left = styled.div`
  }
 
  @media (max-width: 62.5rem) {
-  padding: 2rem;
-  align-items: center;
- }
+    align-items: center;
+    text-align: center;
+  }
 `
 
 export const ComentContainer = styled.textarea`
- border: none;
- resize: none;
- display: flex;
- margin-top: .9rem;
- margin-bottom: .5rem;
- 
- height: 12.875rem;
- padding: 0.75rem;
- gap: 0.5rem;
- overflow: hidden;
- color: ${({ theme }) => theme.Text_Colors.text_secondary};
- font-family: 'Heebo';
- font-size: 15px;
- background-color: ${({ theme }) => theme.Surface_Colors.surface_background};
- border-radius: .5rem;
+  width: 100%;
+  border: none;
+  resize: none;
+  margin-top: .9rem;
+  margin-bottom: .5rem;
+  height: 12.875rem;
+  padding: 0.75rem;
+  color: ${({ theme }) => theme.Text_Colors.text_secondary};
+  font-family: 'Heebo';
+  font-size: 15px;
+  background-color: ${({ theme }) => theme.Surface_Colors.surface_background};
+  border-radius: .5rem;
 `
 
+
 export const Right = styled.div`
- width: 30.25rem;
- display: flex;
- flex-direction: column;
- gap: 0.75rem;
+  width: 30.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 
  input {
   color: #CDD0D4;
@@ -107,9 +108,10 @@ export const Right = styled.div`
   background-color: #171023; 
  } 
  
- @media (max-width: 62.5rem) {
-  
- }
+  @media (max-width: 62.5rem) {
+    width: 100%;
+    align-items: center;
+  }
 `
 
 export const FirstLeft = styled.div`
@@ -171,29 +173,28 @@ export const Internal = styled.div`
 `
 
 export const ButtonMessage = styled.a`
- color: #F5F6F6;
- text-align: center;
- text-decoration: none;
- font-family: 'Heebo';
- font-size: 1rem;
- font-style: normal;
- font-weight: 500;
- line-height: 150%;
- cursor: pointer;
- border: none;
+  color: #F5F6F6;
+  text-decoration: none;
+  font-family: 'Heebo';
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
 
- display: flex;
- width: 14.0625rem;
- padding: 1rem 1.5rem;
- justify-content: center;
- align-items: center;
- gap: 0.5rem;
+  display: flex;
+  width: 14rem;
+  padding: 1rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 
- border-radius: 0.5rem;
- background: #8A42DB;
+  border-radius: 0.5rem;
+  background: #8A42DB;
 
- @media (max-width: 62.5rem) {
-  margin: 0 auto;
- }
+  @media (max-width: 62.5rem) {
+    width: 100%;
+    max-width: 18rem;
+    margin: 0 auto;
+  }
 `
+
 
