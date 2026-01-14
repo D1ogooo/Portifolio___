@@ -25,14 +25,14 @@ export const MainFor = () => {
       <p>Estou sempre pronto para conversar. Envie-me um e-mail para diiogomarsalcosta@gmail.com ou ligue para mim nas redes sociais. </p>
      </FirstLeft>
       <Internal>
-       <a href="https://github.com/D1ogooo" target='_blank'>
-        <img src={githubimage}/>
+       <a href="https://github.com/D1ogooo" target='_blank' rel="noreferrer">
+        <img src={githubimage} alt=""/>
        </a>
-       <a href="https://www.instagram.com/diogoo_0202/" target='_blank'>
-        <img src={instagramimage}/>
+       <a href="https://www.instagram.com/diogoo_0202/" target='_blank' rel="noreferrer">
+        <img src={instagramimage} alt=""/>
        </a>
-       <a href="https://www.linkedin.com/in/diogo-ma%C3%A7al-70a18a2a6/" target='_blank'>
-        <img src={linkedinimage}/>
+       <a href="https://www.linkedin.com/in/diogo-ma%C3%A7al-70a18a2a6/" target='_blank' rel="noreferrer">
+        <img src={linkedinimage} alt=""/>
        </a>
       </Internal>
      </Left>

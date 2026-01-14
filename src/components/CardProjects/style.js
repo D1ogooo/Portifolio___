@@ -88,21 +88,14 @@ export const HeaderCard = styled.div`
   }
  }
 `
-
 export const CardPai = styled.div`
- display: flex;
- justify-content: center;
- width: 90%;
- overflow-x: auto;
- overflow: hidden;
- scroll-behavior: smooth;
- flex-shrink: 0;
- gap: 2rem;
-
- @media (max-width:62.5rem) {
-  justify-content: start;
- }
+  display: flex;
+  gap: 2rem;
+  width: 384px;
+  transition: transform 0.4s ease;
+  will-change: transform;
 `
+
 
 export const Card = styled(Link)`
  &:hover {
@@ -257,6 +250,18 @@ export const CardImage = styled.section`
  }
 `
 
-export const CardsAparecer = styled.div`
- 
+export const CardsAparecer = styled.div``
+
+export const CarouselViewport = styled.div`
+  overflow: hidden;
+  width: 100%;
+  max-width: calc(384px * 3 + 2rem * 2);
+
+  @media (max-width: 900px) {
+    max-width: calc(384px * 2 + 2rem);
+  }
+
+  @media (max-width: 600px) {
+    max-width: 384px;
+  }
 `

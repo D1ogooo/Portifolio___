@@ -11,16 +11,25 @@ import mongodbIcon from "../Projetos/img/mongodbIcon.svg";
 import typescriptIcon from "../Projetos/img/typescript-original.svg";
 import fullStackImage from "../Projetos/img/siteFullstack.png";
 import nodejsImage from "../Projetos/img/Node.js.svg";
-import violetoImage from "../../assets/1715575530078.jpeg";
-import DevstoreImage from "../../assets/DevstoreImage.jpg";
-import primeiroProjetoImage from "../../pages/Projetos/img/primeiro projeto.png";
-import smartwatchImage from "../Projetos/img/smart watch image.png";
-import TodolistImage from "../../assets/todolist ignite image.png";
-import nextIcon from "../../assets/icon_next.png";
+import RubianiPortifolio from "../../assets/foto portfolioRubiani.jpeg";
 
 export const DataProjects = [
 	{
 		id: 0,
+		principalText: "Um site voltado para psicologia da liderança",
+		img: `${RubianiPortifolio}`,
+		tech: [
+			{ image: `${reactIcon}` },
+			{ image: `${typescriptIcon}` },
+			{ image: `${tailwindIcon}` },
+		],
+		title: "🌹 Rubiani psicóloga",
+		// link_github: "PROJETO PRIVADO",
+		deploy: "https://rubiani.com.br",
+		text: "📜 Esse foi um portifólio voltado para psicologia onde a cliente pediu algo com estilo moderno para apresentar seu trabalho de psicóloga da liderança",
+	},
+	{
+		id: 1,
 		principalText: "Um site de periféricos de computador",
 		img: `${CyberCore}`,
 		tech: [
@@ -35,7 +44,7 @@ export const DataProjects = [
 		text: "📜 A ideia de criar o Cybercore era poder criar um site de perifericos de computador, estava lembrando de lugares que tinham esses sitemas que facilitam na busca do cliente e pensei em fazer o meu, esse projeto também serve bastante para poder me exercitar na nova tecnologia que estou estudando, o prisma, alem de também poder me desenvolver em bancos relacionais como postgreesql",
 	},
 	{
-		id: 1,
+		id: 2,
 		principalText: "Um site de estudo de instrumentos musicais",
 		img: `${fullStackImage}`,
 		tech: [
@@ -51,7 +60,7 @@ export const DataProjects = [
 		text: "📜 A ideia do projeto é que eu possa catalogar as aulas que já assisti e também aquelas que ainda preciso assistir, mostrando meu progresso até o momento. E, claro, poder excluir, editar e adicionar as aulas, onde todas ficarão armazenadas no catalogo de cada usuário.",
 	},
 	{
-		id: 2,
+		id: 3,
 		principalText: "Um site de uma loja de detecção de trapaças",
 		img: `${MoonshopImage}`,
 		tech: [
@@ -65,7 +74,7 @@ export const DataProjects = [
 		text: "MoonShop é o projeto de uma loja de screenshare, uma loja de detecção de trapaças no jogo Minecraft e FiveM temos a apresentação dos cursos da mesma e também dos contatos de suporte, neste momento apenas a parte do frontend está praticamente completa , falta ainda a responsividade e a integração com métodos de pagamentos, coisa que já é mais puxada para o lado do backend",
 	},
 	{
-		id: 3,
+		id: 4,
 		principalText: "Cadastro de produtos",
 		img: `${CadastroCamisas}`,
 		tech: [
@@ -79,7 +88,7 @@ export const DataProjects = [
 		deploy: "https://teste-freela.vercel.app/",
 	},
 	{
-		id: 4,
+		id: 5,
 		principalText: "Um site de um cardápio digital",
 		img: `${CoffeeDeliveryimagem}`,
 		tech: [
